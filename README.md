@@ -39,7 +39,9 @@
    ![Снимок экрана от 2023-11-18 11-30-14](https://github.com/Marakya/xflow/assets/113238801/8bfce6b9-09c5-44a2-b320-746a791fee5e)
 
    В папке dags создаем скрипт (youtube_comments_score.py), который с использованием BashOperator вызывает выполнение python скриптов (в папке scripts) и объединяет эти операторы в конвейер оператором >>.
-   ![image](https://github.com/Marakya/mlops_xflow/assets/113238801/422b1336-8b7b-40c7-a438-5d6dbd8b6ee3)
+   
+   ![image](https://github.com/Marakya/mlops_xflow/assets/113238801/53697202-2f12-403a-acae-ecf7077c0427)
+
 
    В итоге, запустив конвейер операций на выполнение, мы увидим успешно выполненную задачу.
 

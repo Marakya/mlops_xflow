@@ -38,14 +38,16 @@
    
    ![Снимок экрана от 2023-11-18 11-30-14](https://github.com/Marakya/xflow/assets/113238801/8bfce6b9-09c5-44a2-b320-746a791fee5e)
 
-   В папке dags создаем скрипт, который с использованием BashOperator вызываетвыполнение python скриптов (в папке scripts) и объединяет эти операторы в конвейер оператором >>.
+   В папке dags создаем скрипт (youtube_comments_score.py), который с использованием BashOperator вызывает выполнение python скриптов (в папке scripts) и объединяет эти операторы в конвейер оператором >>.
+   ![image](https://github.com/Marakya/mlops_xflow/assets/113238801/422b1336-8b7b-40c7-a438-5d6dbd8b6ee3)
+
    В итоге, запустив конвейер операций на выполнение, мы увидим успешно выполненную задачу.
 
    ![2023-11-17 (4)](https://github.com/Marakya/xflow/assets/113238801/61c5cbe0-de53-4098-af8e-541bb6d8f7c6)
 
    ![2023-11-17 (5)](https://github.com/Marakya/xflow/assets/113238801/75f62ea6-9f0f-49cc-b977-1ab070ea9744)
 
-3. Mlflow
+4. Mlflow
 
    Организуем мониторинг выполнения всех операций проекта с использованием MLFlow.
 
@@ -56,6 +58,11 @@
    ```
    
    ![Снимок экрана от 2023-11-18 11-32-28](https://github.com/Marakya/xflow/assets/113238801/e1ab2b4b-02de-4c92-8715-e9dca6754e17)
+
+   Также в скриптах необходимо установить нужные нам объекты под наблюдение mlflow
+   Поскольку мы сохранили код python скрипта как артифакт функцией mlflow.log_artifact, мы можем посмотреть этот код в графическом интерфейсе mlflow.
+   Например, в скрипте train_model.py, мы сохранили следующее 
+   ![image](https://github.com/Marakya/mlops_xflow/assets/113238801/c92ff840-48fe-45e2-a1e8-2094dd98d2dd)
 
    ![2023-11-17 (2)](https://github.com/Marakya/xflow/assets/113238801/827a6fda-2ebd-4718-ac76-628db313d8f6)
    

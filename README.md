@@ -60,8 +60,11 @@
    ![Снимок экрана от 2023-11-18 11-32-28](https://github.com/Marakya/xflow/assets/113238801/e1ab2b4b-02de-4c92-8715-e9dca6754e17)
 
    Также в скриптах необходимо установить нужные нам объекты под наблюдение mlflow
+   
    Поскольку мы сохранили код python скрипта как артифакт функцией mlflow.log_artifact, мы можем посмотреть этот код в графическом интерфейсе mlflow.
-   Например, в скрипте train_model.py, мы сохранили следующее 
+   
+   Например, в скрипте train_model.py, мы сохранили следующее
+   
    ![image](https://github.com/Marakya/mlops_xflow/assets/113238801/c92ff840-48fe-45e2-a1e8-2094dd98d2dd)
 
    ![2023-11-17 (2)](https://github.com/Marakya/xflow/assets/113238801/827a6fda-2ebd-4718-ac76-628db313d8f6)
